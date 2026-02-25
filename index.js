@@ -146,6 +146,7 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/app-release.apk");
 })
 
-app.listen(7770, () => {
-  console.log("Server running on port 7770");
+app.listen(80, () => {
+  console.log("Server running on port 80");
+
 });
