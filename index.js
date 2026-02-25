@@ -143,10 +143,11 @@ async function cleanupInvalidTokens(tokens, responses) {
 }
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/app-release.apk");
+  res.send("Hello");
 })
 
 app.listen(80, () => {
   console.log("Server running on port 80");
 
 });
+
